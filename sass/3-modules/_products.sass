@@ -11,6 +11,9 @@
   position: relative
   transition: .4s
   width: 20%
+  @include base-mixins.mobile
+    margin: 1rem
+    width: 90%
   &:hover
     border-color: variables.$primary-color
   

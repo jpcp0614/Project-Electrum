@@ -9,8 +9,13 @@
   h2
     font-size: 2rem
     text-transform: uppercase
+    @include base-mixins.mobile
+      text-align: center
   
   &-container
     display: flex
     justify-content: space-between
     padding: 2rem 0
+    @include base-mixins.mobile
+      align-items: center
+      flex-direction: column

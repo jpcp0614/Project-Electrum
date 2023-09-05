@@ -9,6 +9,8 @@
   flex-direction: column
   justify-content: center
   padding: 3rem
+  @include base-mixins.mobile
+    text-align: center
 
   h2
     color: variables.$dark-color
@@ -23,10 +25,14 @@
   form
     display: flex
     margin-bottom: 3rem
+    @include base-mixins.mobile
+      width: 100%
 
     input[type="email"]
       border: 1px solid variables.$section-bg-color
       @include layouts-mixins.rounded-input
+      @include base-mixins.mobile
+        width: 100%
 
 .social-media
   i

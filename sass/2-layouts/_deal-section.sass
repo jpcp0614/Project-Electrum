@@ -11,6 +11,11 @@
   background-color: variables.$section-bg-color
   height: 400px
   padding: 2rem
+  @include base-mixins.mobile
+    background-size: 70%
+    height: 700px
+    background-position-x: 120%
+    background-position-y: 130%
 
   &-content
     align-items: center
@@ -18,10 +23,16 @@
     height: 100%
     @include layouts-mixins.center-content
     justify-content: center
+    @include base-mixins.mobile
+      text-align: center
 
     &-timer
       display: flex
       margin-bottom: 2rem
+      @include base-mixins.mobile
+        align-self: center
+        flex-wrap: wrap
+        justify-content: center
 
       .deal-container-timer
         align-items: center
@@ -34,6 +45,8 @@
         height: 100px
         margin: 0 1rem
         width: 100px
+        @include base-mixins.mobile
+          margin-bottom: 1.5rem
 
         &-time
           font-weight: bold
