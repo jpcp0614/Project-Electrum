@@ -32,10 +32,10 @@ li {
 }
 
 .header {
-  background: #15161D;
+  background-color: #15161D;
 }
 .header-top {
-  background: #1E1F29;
+  background-color: #1E1F29;
   color: #FFF;
 }
 .header-top-container {
@@ -102,7 +102,7 @@ li {
 }
 .main-header-container .header-actions-menu .wishlist-container .qty, .main-header-container .header-actions-menu .header-cart-container .qty {
   align-items: center;
-  background: #D10024;
+  background-color: #D10024;
   border-radius: 50%;
   display: flex;
   height: 18px;
@@ -121,7 +121,7 @@ li {
 }
 
 .header-bottom {
-  background: #FFF;
+  background-color: #FFF;
   border-bottom: 2px solid #E4E7ED;
   border-top: 3px solid #D10024;
 }
@@ -146,26 +146,89 @@ li {
   color: #D10024;
 }
 
+.banners {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 3rem 0;
+}
+
 .btn {
   padding: 8px 15px;
   color: #FFF;
   border-radius: 20px;
   font-weight: bold;
   text-transform: uppercase;
-  background: #D10024;
+  background-color: #D10024;
   cursor: pointer;
   outline: none;
   border: 2px solid #D10024;
   transition: 0.4s;
 }
 .btn:hover {
-  background: #FFF;
+  background-color: #FFF;
   color: #D10024;
 }
 .btn-half {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   text-transform: none;
+}
+
+.banner {
+  width: 30%;
+  height: 200px;
+  position: relative;
+  color: #FFF;
+  transition: 0.3s;
+  background-position: center;
+  background-size: cover;
+  background-size: 100%;
+}
+.banner:hover {
+  background-size: 120%;
+}
+.banner-cover {
+  background-color: #D10024;
+  width: 70%;
+  height: 100%;
+  opacity: 0.8;
+  border-bottom-right-radius: 6rem;
+}
+.banner-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+}
+.banner-content h2 {
+  font-size: 2.1rem;
+  margin-bottom: 1rem;
+  max-width: 70%;
+}
+.banner-content a {
+  font-size: 1.5rem;
+  color: #FFF;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.banner-content i {
+  color: #FFF;
+  margin-left: 0.8rem;
+}
+
+#banner-1 {
+  background-image: url("../../img/banner-1.jpg");
+}
+
+#banner-2 {
+  background-image: url("../../img/banner-2.jpg");
+}
+
+#banner-3 {
+  background-image: url("../../img/banner-3.jpg");
 }
 
 /*# sourceMappingURL=app.css.map */
